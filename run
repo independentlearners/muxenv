@@ -1,9 +1,19 @@
-#!/bin/bash
+#!/data/data/com.termux/files/usr/bin/bash
 # ===========================
 #
 # ===========================
-
+# 
 set -euo pipefail
 
-SCRIPT_DIR="$(cd "$(dirname -- "${BASH_SOURCE[0]}")" 2>/dev/null && pwd)"
+cls=$'\e[2J\e[H'
+printf '%s' "$cls"
+
+SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &> /dev/null && pwd)"
+
+if [[ "$PREFIX" != *"com.termux"* ]]; then
+  echo "[!] Error: Script ini hanya bisa dijalankan di Termux!" >&2
+  exit 1
+fi
+
+printf '%s\n' "[✓] Terdeteksi Termux, melanjutkan..."
 

@@ -1,0 +1,117 @@
+# ====== EDITOR / IDE ======
+# Vim / Neovim
+*.swo
+*.un~
+*~
+.netrwhist
+.nvimlog
+.nvimstate
+home/.config/nvim/plugged/          # Plugin manager (vim-plug, dein, packer)
+home/.config/nvim/pack/             # Paket bawaan Neovim
+home/.config/nvim/registry/         # lazy.nvim registry
+home/.config/nvim/site/             # Site packages
+home/.config/nvim/pack/
+# lazy.nvim lock file (opsional, tergantung preferensi)
+lazy-lock.json
+home/.config/nvim/.netrwhist        # Riwayat netrw
+
+# Neovim cache & data
+.cache/
+.local/
+
+# swap / backup
+*.swp
+*.bak
+*.tmp
+
+# Shaders cache directory
+home/.config/mpv/shaders/cache
+.DS_Store
+# ====== TERMINAL MULTIPLEXER ======
+# Tmux
+home/.config/tmux/plugins/
+# ---- Untuk berjaga-jaga ----
+home/.config/tmux/resurrect/        # Direktori penyimpanan sesi resurrect
+home/.config/tmux/*.log
+home/.config/tmux/*.tmp
+
+# ====== SHELL (Zsh / Bash) ======
+# Zsh
+home/.zsh_history
+home/.zcompdump*
+home/.zsh-syntax-highlighting/      # Jika diinstal di ~
+home/.zplug/                        # Plugin manager Zplug
+home/.antigen/                      # Plugin manager Antigen
+home/.zim/                          # Plugin manager Zim
+home/.oh-my-zsh/custom/             # Jika Anda meng-clone Oh My Zsh, abaikan custom
+# (opsional: abaikan seluruh .oh-my-zsh/ jika tidak disimpan di repo)
+
+# Bash
+home/.bash_history
+home/.bash_cache
+home/.bash_logout                   # Biasanya tidak perlu di-commit
+
+# ====== VERSION CONTROL ======
+# Git
+home/.gitconfig.local               # Konfigurasi lokal (biasanya untuk identitas)
+home/.git-credentials               # Kredensial (jangan pernah di-commit!)
+home/.gitignore.local               # Ignore lokal
+
+# ====== KEAMANAN / SENSITIF ======
+# SSH
+home/.ssh/                          # Seluruh folder SSH (kunci pribadi, known_hosts, dll.)
+# GPG
+home/.gnupg/                        # Seluruh folder GPG
+
+# ====== CACHE / LOG / TEMP UMUM ======
+# Direktori cache tambahan (jika tidak tertangkap .cache/)
+home/.config/mpv/cache/             # Cache MPV (selain shaders)
+home/.config/mpv/watch_later/       # State pemutaran
+home/.config/newsboat/cache/        # Cache Newsboat
+home/.config/newsboat/history       # History Newsboat
+home/.config/ranger/bookmarks       # Ranger bookmarks (opsional)
+home/.config/ranger/tag             # Ranger tags
+home/.config/ranger/history         # Ranger history
+home/.local/share/Trash/            # Tempat sampah
+*.log
+*.pid
+*.lock
+
+# ====== PYTHON ======
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.venv/
+venv/
+env/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ====== NODE / JAVASCRIPT ======
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+package-lock.json                   # Jika ada, biasanya tidak perlu di dotfiles
+
+# ====== RUBY ======
+.bundle/
+Gemfile.lock
+
+# ====== RUST ======
+target/
+Cargo.lock
+
+# ====== MISC (OS / FILE MANAGER) ======
+Thumbs.db                           # Windows
+.directory                          # KDE
+.Trash-*
+.fseventsd
+.Spotlight-V100
+
+# ====== OTHERS ======
+*.txt
